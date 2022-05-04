@@ -9,6 +9,7 @@
 body,
 .app {
   background-color: #e5e5e5;
+  --primary-green: #016450;
 }
 
 .app {
@@ -21,4 +22,9 @@ body,
   box-sizing: border-box;
   max-width: 1230px;
   margin: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }

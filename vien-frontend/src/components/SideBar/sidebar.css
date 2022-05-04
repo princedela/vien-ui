@@ -1,0 +1,101 @@
+.sidebar {
+  background: #fdfdfd;
+  box-shadow: 0px 2px 15px rgba(108, 126, 147, 0.1);
+  border-radius: 6px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.profile-img {
+  height: 78px;
+  width: 78px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+img.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile button {
+  width: 135px;
+  height: 32px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-green);
+  font-weight: 500;
+  text-align: center;
+  font-size: 14px;
+}
+
+.profile h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+p.role {
+  font-size: 16px;
+  color: #767676;
+}
+
+.nav-item {
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e8e8e8;
+}
+.nav-item img {
+  height: 24px;
+  width: 24px;
+}
+.nav-item a {
+  color: #1a1a1a;
+}
+
+.nav-list {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.copyable {
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 8px;
+  color: #226ec7;
+  position: relative;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 193px;
+}
+.action-input {
+  display: flex;
+}
+.action-input button {
+  background-color: transparent;
+  flex: 1;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
