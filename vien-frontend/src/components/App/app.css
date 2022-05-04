@@ -1,9 +1,24 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+.app {
+  background-color: #e5e5e5;
+}
+
 .app {
   min-height: 100vh;
-  background-color: #e5e5e5;
   display: grid;
   grid-template-columns: 288px 1fr;
-  grid-template-rows: 1fr 280px;
+  grid-template-rows: 80px 1fr 280px;
   column-gap: 27px;
   row-gap: 40px;
+  box-sizing: border-box;
+  max-width: 1230px;
+  margin: auto;
 }
