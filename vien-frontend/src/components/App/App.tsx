@@ -7,8 +7,11 @@ import "./app.css";
 function App() {
   return (
     <div className="app">
-      <SideBar />
-      <Footer />
+      <Header />
+      <section className="page-grid">
+        <SideBar />
+        <Footer />
+      </section>
     </div>
   );
 }

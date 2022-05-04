@@ -14,6 +14,7 @@ export default function SideBar() {
           <input
             value="https://www.udwell.com/p."
             disabled
+            readOnly={true}
             className="copyable"
           />
           <button className="copy">

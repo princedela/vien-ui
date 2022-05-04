@@ -14,16 +14,23 @@ body,
 
 .app {
   min-height: 100vh;
+  /* display: grid;
+  grid-template-rows: 80px 1fr; */
+  box-sizing: border-box;
+  /* row-gap: 40px; */
+}
+.page-grid {
+  row-gap: 40px;
+  column-gap: 27px;
+  margin: auto;
+  width: 100%;
+  max-width: 1230px;
   display: grid;
   grid-template-columns: 288px 1fr;
-  grid-template-rows: 80px 1fr 280px;
-  column-gap: 27px;
-  row-gap: 40px;
-  box-sizing: border-box;
-  max-width: 1230px;
-  margin: auto;
+  grid-template-rows: 1fr 280px;
+  padding: 20px;
+  justify-self: center;
 }
-
 button {
   border: none;
   cursor: pointer;
