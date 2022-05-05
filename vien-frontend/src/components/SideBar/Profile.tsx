@@ -8,6 +8,9 @@ export default function Profile({
     <div className="profile">
       <div className="profile-img">
         <img className="avatar" alt="User Avatar" src="/img/headshot.jpg" />
+        <button className="edit-photo">
+          <img src="/img/bx-camera.svg" alt="Edit Photo Button" />
+        </button>
       </div>
       <h3>Alex Assenmacher</h3>
       <p className="role">{role}</p>

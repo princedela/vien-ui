@@ -50,7 +50,7 @@ export default function DashboardContent() {
       </div>
       <div className="metrics-row lg">
         <MetricCardMD
-          title="Sales"
+          title="Total Sales"
           iconSrc="/img/money_round.svg"
           difference="+$985.56"
         >
@@ -64,7 +64,7 @@ export default function DashboardContent() {
           <div className="metrics">
             <div className="top">
               <h3 className="value">$2,595</h3>
-              <p className="description tag">Invoices</p>
+              <p className="description tag">Invoiced</p>
             </div>
             <div className="bottom">
               <h3 className="value">23</h3>
@@ -86,7 +86,7 @@ export default function DashboardContent() {
           />
         </MetricCardLG>
         <MetricCardMD
-          title="Sales"
+          title="User Onboarding"
           bgColor="#facf55"
           iconSrc="/img/profile_round.svg"
           tag="Q3 Goal: 8,000 User"

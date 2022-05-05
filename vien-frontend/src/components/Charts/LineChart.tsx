@@ -33,15 +33,21 @@ export default function LineChart({
         type: "line",
         data: {
           labels,
+
           datasets: [
             {
               label: "",
               data: values,
               fill: {
                 target: "origin",
-                above: fill, // Area will be red above the origin
+                above: fill,
               },
+              pointBackgroundColor: borderColor,
               borderColor,
+              borderWidth: 2,
+              pointRadius: 2.7,
+              pointBorderWidth: 0.8,
+              pointBorderColor: "#ffffff",
               //   tension: 0.1,
             },
           ],

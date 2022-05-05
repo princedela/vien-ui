@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #1a1a1a;
 }
 
 body,
@@ -14,10 +15,7 @@ body,
 
 .app {
   min-height: 100vh;
-  /* display: grid;
-  grid-template-rows: 80px 1fr; */
   box-sizing: border-box;
-  /* row-gap: 40px; */
 }
 .page-grid {
   row-gap: 40px;
