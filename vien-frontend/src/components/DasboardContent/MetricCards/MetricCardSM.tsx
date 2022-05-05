@@ -12,7 +12,7 @@ export default function MetricCardSM({
         <h4>{title}</h4>
         <p>{tag}</p>
       </div>
-      {children && children}
+      <section className="metric-children">{children && children}</section>
     </div>
   );
 }

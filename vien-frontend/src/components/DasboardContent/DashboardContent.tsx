@@ -11,9 +11,23 @@ export default function DashboardContent() {
   return (
     <section className="dashboard-content">
       <div className="metrics-row">
-        <MetricCardSM title="Sales" tag="Monthly Goal"></MetricCardSM>
+        <MetricCardSM title="Sales" tag="Monthly Goal">
+          <section className="metrics">
+            <h3>98.1%</h3>
+            <p>+6.9%</p>
+          </section>
+          <progress className="green" value="74" max="100"></progress>
+          <p className="tag">Yearly Goal</p>
+        </MetricCardSM>
         <MetricCardSM title="Revenue" tag="Total Profit"></MetricCardSM>
-        <MetricCardSM title="Clients" tag="Subscribed"></MetricCardSM>
+        <MetricCardSM title="Clients" tag="Subscribed">
+          <section className="metrics">
+            <h3>1,232</h3>
+            <p>+3.2%</p>
+          </section>
+          <progress className="green" value="65" max="100"></progress>
+          <p className="tag">Yearly Goal</p>
+        </MetricCardSM>
       </div>
       <div className="metrics-row lg">
         <MetricCardMD

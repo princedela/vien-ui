@@ -45,6 +45,7 @@
 .metric-card .difference {
   color: #34aa44;
   font-size: 12px;
+  font-weight: 400;
 }
 .metric-card p {
   font-size: 14px;
@@ -52,6 +53,7 @@
 }
 .md .metric-header .tag {
   font-size: 12px;
+  font-weight: 400;
 }
 .md .metric-header {
   gap: 16px;
@@ -103,4 +105,59 @@
 
 .metrics p {
   font-size: 11px;
+}
+.sm .metric-children {
+  padding: 20px 24px 0;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.sm .metrics {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 14px;
+  align-items: center;
+}
+.sm .metrics h3 {
+  font-size: 36px;
+  font-weight: normal;
+  align-items: center;
+}
+
+.sm .metrics p {
+  color: #348373;
+  font-weight: 400;
+}
+
+progress {
+  border-radius: 2px;
+  height: 4px;
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+}
+progress::-webkit-progress-bar {
+  background-color: #eaecee;
+  border-radius: 2px;
+}
+progress::-webkit-progress-value {
+  background-color: #016450;
+  border-radius: 2px;
+}
+progress::-moz-progress-bar {
+  background-color: #eaecee;
+  border-radius: 2px;
+}
+progress::-moz-progress-value {
+  background-color: #016450;
+  border-radius: 2px;
+}
+progress::-ms-progress-bar {
+  background-color: #eaecee;
+  border-radius: 2px;
+}
+progress::-ms-progress-value {
+  background-color: #016450;
+  border-radius: 2px;
 }
