@@ -33,7 +33,7 @@ export default function DoughnutChart({
           labels,
           datasets: [
             {
-              label: "# of Votes",
+              label: "",
               data: values,
               backgroundColor: colors,
               borderColor: colors,

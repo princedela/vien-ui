@@ -6,6 +6,7 @@ import MetricCardMD from "./MetricCards/MetricCardMD";
 import MetricCardSM from "./MetricCards/MetricCardSM";
 import { v4 as uuid } from "uuid";
 import { getValue } from "@testing-library/user-event/dist/utils";
+import BarChart from "../Charts/BarChart";
 
 export default function DashboardContent() {
   return (
@@ -19,7 +20,23 @@ export default function DashboardContent() {
           <progress className="green" value="74" max="100"></progress>
           <p className="tag">Yearly Goal</p>
         </MetricCardSM>
-        <MetricCardSM title="Revenue" tag="Total Profit"></MetricCardSM>
+        <MetricCardSM title="Revenue" tag="Total Profit">
+          <section className="metrics">
+            <h3>$13,893</h3>
+            <p style={{ color: "#ff8433" }}>+11.3%</p>
+          </section>
+          <BarChart
+            id={uuid()}
+            data={[
+              { value: 5, label: uuid() },
+              { value: 12, label: uuid() },
+              { value: 7, label: uuid() },
+              { value: 11, label: uuid() },
+              { value: 8, label: uuid() },
+              { value: 2, label: uuid() },
+            ]}
+          />
+        </MetricCardSM>
         <MetricCardSM title="Clients" tag="Subscribed">
           <section className="metrics">
             <h3>1,232</h3>
