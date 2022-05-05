@@ -7,6 +7,8 @@ import MetricCardSM from "./MetricCards/MetricCardSM";
 import { v4 as uuid } from "uuid";
 import { getValue } from "@testing-library/user-event/dist/utils";
 import BarChart from "../Charts/BarChart";
+import LineChart from "../Charts/LineChart";
+import { dummy } from "../../dummy/dummy";
 
 export default function DashboardContent() {
   return (
@@ -70,10 +72,19 @@ export default function DashboardContent() {
             </div>
           </div>
         </MetricCardMD>
-        <MetricCardLG title="Daily Profit"></MetricCardLG>
+        <MetricCardLG title="Daily Profit">
+          <LineChart data={dummy.linechartData} id={uuid()} />
+        </MetricCardLG>
       </div>
       <div className="metrics-row lg">
-        <MetricCardLG title="Daily active clients"></MetricCardLG>
+        <MetricCardLG title="Daily active clients">
+          <LineChart
+            data={dummy.linechartData}
+            id={uuid()}
+            borderColor="#348373"
+            fill="rgba(52, 131, 115, 0.6)"
+          />
+        </MetricCardLG>
         <MetricCardMD
           title="Sales"
           bgColor="#facf55"

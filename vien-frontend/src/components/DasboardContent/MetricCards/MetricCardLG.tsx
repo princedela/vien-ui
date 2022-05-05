@@ -9,7 +9,7 @@ export default function MetricCardLG({ title, children }: MetricCardLGProps) {
           <img src="/img/more.svg" alt="More Button" />
         </button>
       </div>
-      {children && children}
+      <section className="metric-children">{children && children}</section>
     </div>
   );
 }
