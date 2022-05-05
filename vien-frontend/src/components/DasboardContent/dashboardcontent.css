@@ -27,5 +27,80 @@
   border: 1px solid #eaedf3;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
-  padding: 20px 24px;
+}
+.metric-card.lg {
+  max-width: 554px;
+}
+
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 0.8px solid #eaecee;
+}
+.metric-card h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.metric-card .difference {
+  color: #34aa44;
+  font-size: 12px;
+}
+.metric-card p {
+  font-size: 14px;
+  font-weight: 100;
+}
+.md .metric-header .tag {
+  font-size: 12px;
+}
+.md .metric-header {
+  gap: 16px;
+  justify-content: left;
+}
+
+.metric-header .more-button {
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.metric-icon {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3.2px;
+}
+
+.metric-children {
+  display: flex;
+  align-items: center;
+  padding: 35px 24px 0;
+}
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.metrics > div {
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+  flex-direction: column;
+  text-align: right;
+}
+.metrics .top {
+  flex: 1;
+  border-bottom: 1px solid #eaecee;
+  padding-bottom: 15px;
+}
+
+.metrics h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.metrics p {
+  font-size: 11px;
 }
